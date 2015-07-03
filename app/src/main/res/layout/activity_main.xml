@@ -10,4 +10,11 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" />
 
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:onClick="sendMessage" />
+
 </RelativeLayout>
