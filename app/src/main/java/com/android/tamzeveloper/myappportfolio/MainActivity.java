@@ -1,9 +1,12 @@
 package com.android.tamzeveloper.myappportfolio;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -34,5 +37,48 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Called when the user touches the button */
+    public void sendMessage(View view) {
+        // Do something in response to button click
+
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch ";
+        int duration = Toast.LENGTH_SHORT;
+
+        int buttonId=view.getId();
+
+        switch (buttonId){
+            case R.id.button_spotify:
+                text=text+"Spotify Streamer App!";
+                break;
+            case R.id.button_superDuo1:
+                text=text+"Football Scores App!";
+                break;
+            case R.id.button_superDuo2:
+                text=text+"Library App!";
+                break;
+
+            case R.id.button_builtIt:
+                text=text+"Build It Bigger App!";
+                break;
+
+            case R.id.button_xyzReader:
+                text=text+"XYZ Reader App!";
+                break;
+            case R.id.button_myApp:
+                text=text+"my capston app!";
+                break;
+
+
+
+        }
+
+
+
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 }

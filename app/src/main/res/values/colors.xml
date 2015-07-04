@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="button_bg">#F08C35</color>
+    <color name="button_myApp_bg">#B71C1C</color>
 
 </resources>

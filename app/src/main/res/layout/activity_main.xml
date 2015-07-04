@@ -11,34 +11,104 @@
         android:text="@string/my_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#01579B"
+        android:paddingBottom="20dp" />
 
     <Button
         android:id="@+id/button_spotify"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/buttonWidth"
         android:layout_height="wrap_content"
-        android:text="Spotify Streamer"
-        android:onClick="sendMessage"
+        android:text="@string/spotify_name"
+
         android:layout_below="@id/title"
+        android:background="@color/button_bg"
 
         android:layout_alignParentLeft="false"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:textAllCaps="true"
+        android:onClick="sendMessage"/>
     <Button
-        android:id="@+id/button_duo1"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_superDuo1"
+        android:layout_width="@dimen/buttonWidth"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_spotify"
-        android:text="Scores app"
+        android:text="@string/superDuo1_name"
         android:onClick="sendMessage"
-        android:layout_centerHorizontal="true" />
+
+        android:background="@color/button_bg"
+        android:textAllCaps="true"
+
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/button_spotify"/>
+    <Button
+        android:id="@+id/button_superDuo2"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/superDuo2_name"
+        android:onClick="sendMessage"
+
+        android:background="@color/button_bg"
+        android:textAllCaps="true"
+
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/button_superDuo1"/>
 
     <Button
-        android:id="@+id/button_send1"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_builtIt"
+        android:layout_width="@dimen/buttonWidth"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_duo1"
-        android:text="Scores app"
+        android:text="@string/builtIt_name"
         android:onClick="sendMessage"
-        android:layout_centerHorizontal="true" />
+
+        android:background="@color/button_bg"
+        android:textAllCaps="true"
+
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/button_superDuo2"/>
+
+    <Button
+        android:id="@+id/button_xyzReader"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/xyzReader_name"
+        android:onClick="sendMessage"
+        android:textAllCaps="true"
+        android:background="@color/button_bg"
+
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/button_builtIt"/>
+
+    <Button
+        android:id="@+id/button_myApp"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/myApp_name"
+        android:onClick="sendMessage"
+        android:textAllCaps="true"
+        android:background="@color/button_myApp_bg"
+        android:textColor="@android:color/white"
+
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/button_xyzReader"/>
+
+
 
 </RelativeLayout>
