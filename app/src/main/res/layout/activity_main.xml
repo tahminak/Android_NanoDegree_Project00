@@ -24,10 +24,19 @@
         android:layout_alignParentLeft="false"
         android:layout_centerHorizontal="true" />
     <Button
-        android:id="@+id/button_send1"
+        android:id="@+id/button_duo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_spotify"
+        android:text="Scores app"
+        android:onClick="sendMessage"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_send1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_duo1"
         android:text="Scores app"
         android:onClick="sendMessage"
         android:layout_centerHorizontal="true" />
